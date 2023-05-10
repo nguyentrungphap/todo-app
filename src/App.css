@@ -1,0 +1,50 @@
+.Todo {
+  display: flex;
+  align-items: center;
+}
+.Todo p {
+  background-color: azure;
+  width: 175px;
+}
+.Todo .icon {
+  background-color: azure;
+  border-left: 2px solid #282c34;
+  width: 70px;
+  text-align: center;
+}
+.todo-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .todo-logo {
+    animation: todo-logo-spin infinite 20s linear;
+  }
+}
+
+.todo-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.todo-link {
+  color: #61dafb;
+}
+body {
+  background-color: violet;
+}
+@keyframes todo-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
